@@ -6,7 +6,7 @@ def main():
 	cap = cv2.VideoCapture("test_video1.mp4")
 	while cap.isOpened():
 		ret, color_frame = cap.read()
-		line_frame = process_frame(color_frame, solid_lines=True)
+		line_frame = process_frame(color_frame)
 		cv2.imshow("main", line_frame)
 		if cv2.waitKey(35) == 27:
 			break
