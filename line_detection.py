@@ -4,19 +4,15 @@ import numpy as np
 import cv2
 import math
 
-
-
 img_h = 540 
 img_w = 970
 # percent value of polygon height -> 59%
 polyg_height = 0.59 - 0.2 # 0.2 values is just for better looking lines indicators
 
 vertices = np.array([[(50,img_h),
-					(450,320),
-					(510,320),
-					(img_w-50,img_h)]], dtype=np.int32)
-
-
+			(450,320),
+			(510,320),
+			(img_w-50,img_h)]], dtype=np.int32)
 
 
 def region_of_interest(img, vertices):
