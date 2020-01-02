@@ -46,7 +46,6 @@ def compute_lane_from_candidates(line_candidates, img_shape):
 	pos_slope = np.median([line.slope for line in pos_lines if math.isnan(line.slope) == False])
 	x1, y1 = np.int32(np.round((img_shape[0] - pos_bias) / pos_slope)), img_shape[0]
 	x2, y2 = x1 - 250, 350
-	#x2, y2 = 0, abs(pos_bias)
 	x2, y2 = np.int32(np.round(pos_bias / pos_slope)) + 600, 350
 	right_line = Line(x1, y1, x2, y2)
 	print(img_shape)	
