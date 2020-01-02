@@ -12,7 +12,7 @@ class Line:
         self.bias = self.compute_bias()
 
     def compute_slope(self):
-    	return (self.y2 - self.y1) / (self.x2 - self.x1 + np.finfo(float).eps)
+   	   return (self.y2 - self.y1) / (self.x2 - self.x1)
 
     def compute_bias(self):
     	return self.y2 - self.slope * self.x1
@@ -26,5 +26,5 @@ class Line:
     	self.x2 = x2
     	self.y2 = y2
 
-    def draw(self, img, color=[255,0,0], thickness=2):
+    def draw(self, img, color=[255,0,0], thickness=12):
         cv2.line(img, (self.x1, self.y1), (self.x2, self.y2), color=color, thickness=thickness)
