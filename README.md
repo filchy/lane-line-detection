@@ -3,7 +3,7 @@
 This program detects straight lines on the road.
 
 ## Dependencies
-* python 3.6+
+* python
 * opencv-python
 * numpy
 * math
