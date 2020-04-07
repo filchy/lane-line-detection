@@ -1,6 +1,6 @@
 # Lane line detection
+Simple implementation of computer vision algorithm for real-time detection of straight lines. 
 ![](output/output_frame.jpg)
-This program detects straight lines on the road.
 
 ## Dependencies
 * python
